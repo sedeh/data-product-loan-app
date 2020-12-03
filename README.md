@@ -6,4 +6,4 @@ The project demonstrates an end-to-end data product lifecycle starting from data
 
 Remember to start small. Keep things simple. And then iterate. 
 
-Follow along in the detailed self-guided project walk-through here: insert LinkedIn article
+Follow along in the detailed self-guided project walk-through here: https://www.linkedin.com/pulse/build-data-products-like-tech-giant-samuel-edeh
