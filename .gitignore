@@ -1,0 +1,4 @@
+models/*.pkl
+notebooks/*.ipynb_checkpoints
+/.idea
+*.zip

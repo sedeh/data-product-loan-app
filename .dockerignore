@@ -1,0 +1,7 @@
+models/
+notebooks/
+/.idea
+*.yml
+*.json
+*.md
+*.zip

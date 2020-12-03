@@ -1,0 +1,13 @@
+{
+   "loan_amnt":11000.0,
+   "term_in_months":36.0,
+   "payment":367.2,
+   "employment_length":10.0,
+   "home_owner":1.0,
+   "income":85000.0,
+   "verified":1.0,
+   "default":0.0,
+   "open_accts":18.0,
+   "credit_debt":15926.0,
+   "interest_rate_by_grade":11.715399764660955
+}

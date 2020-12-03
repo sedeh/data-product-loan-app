@@ -1,0 +1,24 @@
+# This conda file specifies the model training environment.
+# Details about conda environment file format:
+# https://conda.io/docs/user-guide/tasks/manage-environments.html#create-env-file-manually
+# Set the version of any library that will be used during model inference
+
+name: loanapp
+channels:
+  - conda-forge
+  - defaults
+  - mro
+dependencies:
+  - python=3.8
+  - pip
+  - pip:
+    - numpy==1.19.1
+    - scikit-learn==0.22
+    - scipy==1.5.2
+    - awscli
+    - boto3
+#    - xgboost
+    - pandas
+    - seaborn
+    - matplotlib
+    - jupyter

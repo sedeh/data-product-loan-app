@@ -1,0 +1,377 @@
+{
+	"info": {
+		"_postman_id": "90a8c68d-630b-4c4c-8524-fa16340f7c2a",
+		"name": "loanapp",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "200_ok",
+			"request": {
+				"auth": {
+					"type": "awsv4",
+					"awsv4": [
+						{
+							"key": "service",
+							"value": "{{service}}",
+							"type": "string"
+						},
+						{
+							"key": "region",
+							"value": "{{region}}",
+							"type": "string"
+						},
+						{
+							"key": "secretKey",
+							"value": "{{secretkey}}",
+							"type": "string"
+						},
+						{
+							"key": "accessKey",
+							"value": "{{accesskey}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"loan_amnt\":11000.0,\n  \"term_in_months\":36.0,\n  \"payment\":367.2,\n  \"employment_length\":10.0,\n  \"home_owner\":1.0,\n  \"income\":85000.0,\n  \"verified\":1.0,\n  \"default\":0.0,\n  \"open_accts\":18.0,\n  \"credit_debt\":15926.0,\n  \"interest_rate_by_grade\":11.715399764660955\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://{{apikey}}.execute-api.{{region}}.amazonaws.com/demo/predict",
+					"protocol": "https",
+					"host": [
+						"{{apikey}}",
+						"execute-api",
+						"{{region}}",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"demo",
+						"predict"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "400_missing_element",
+			"request": {
+				"auth": {
+					"type": "awsv4",
+					"awsv4": [
+						{
+							"key": "service",
+							"value": "{{service}}",
+							"type": "string"
+						},
+						{
+							"key": "region",
+							"value": "{{region}}",
+							"type": "string"
+						},
+						{
+							"key": "secretKey",
+							"value": "{{secretkey}}",
+							"type": "string"
+						},
+						{
+							"key": "accessKey",
+							"value": "{{accesskey}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"loan_amnt\":11000.0,\n  \"term_in_months\":36.0,\n  \"payment\":367.2,\n  \"employment_length\":10.0,\n  \"home_owner\":1.0,\n  \"income\":85000.0,\n  \"verified\":1.0,\n  \"default\":0.0,\n  \"interest_rate_by_grade\":11.715399764660955\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://{{apikey}}.execute-api.{{region}}.amazonaws.com/demo/predict",
+					"protocol": "https",
+					"host": [
+						"{{apikey}}",
+						"execute-api",
+						"{{region}}",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"demo",
+						"predict"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "400_missing_body",
+			"request": {
+				"auth": {
+					"type": "awsv4",
+					"awsv4": [
+						{
+							"key": "service",
+							"value": "{{service}}",
+							"type": "string"
+						},
+						{
+							"key": "region",
+							"value": "{{region}}",
+							"type": "string"
+						},
+						{
+							"key": "secretKey",
+							"value": "{{secretkey}}",
+							"type": "string"
+						},
+						{
+							"key": "accessKey",
+							"value": "{{accesskey}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://{{apikey}}.execute-api.{{region}}.amazonaws.com/demo/predict",
+					"protocol": "https",
+					"host": [
+						"{{apikey}}",
+						"execute-api",
+						"{{region}}",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"demo",
+						"predict"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "400_invalid_body",
+			"request": {
+				"auth": {
+					"type": "awsv4",
+					"awsv4": [
+						{
+							"key": "service",
+							"value": "{{service}}",
+							"type": "string"
+						},
+						{
+							"key": "region",
+							"value": "{{region}}",
+							"type": "string"
+						},
+						{
+							"key": "secretKey",
+							"value": "{{secretkey}}",
+							"type": "string"
+						},
+						{
+							"key": "accessKey",
+							"value": "{{accesskey}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\"\"",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://{{apikey}}.execute-api.{{region}}.amazonaws.com/demo/predict",
+					"protocol": "https",
+					"host": [
+						"{{apikey}}",
+						"execute-api",
+						"{{region}}",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"demo",
+						"predict"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "400_non_json",
+			"request": {
+				"auth": {
+					"type": "awsv4",
+					"awsv4": [
+						{
+							"key": "service",
+							"value": "{{service}}",
+							"type": "string"
+						},
+						{
+							"key": "region",
+							"value": "{{region}}",
+							"type": "string"
+						},
+						{
+							"key": "secretKey",
+							"value": "{{secretkey}}",
+							"type": "string"
+						},
+						{
+							"key": "accessKey",
+							"value": "{{accesskey}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "  <?xml version=\"1.0\" encoding=\"UTF-8\"?>\n  <Agenda type=\"gardening\">\n    <Activity type=\"Watering\">\n      <golf-course time=\"6:00\"/>\n      <yard time=\"7:00\"/>\n    </Activity>\n    <Activity type=\"cooking\">\n      <lunch time=\"12:00\"/>\n    </Activity>\n  </Agenda>",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://{{apikey}}.execute-api.{{region}}.amazonaws.com/demo/predict",
+					"protocol": "https",
+					"host": [
+						"{{apikey}}",
+						"execute-api",
+						"{{region}}",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"demo",
+						"predict"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "400_non_numeric",
+			"request": {
+				"auth": {
+					"type": "awsv4",
+					"awsv4": [
+						{
+							"key": "service",
+							"value": "{{service}}",
+							"type": "string"
+						},
+						{
+							"key": "region",
+							"value": "{{region}}",
+							"type": "string"
+						},
+						{
+							"key": "secretKey",
+							"value": "{{secretkey}}",
+							"type": "string"
+						},
+						{
+							"key": "accessKey",
+							"value": "{{accesskey}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"loan_amnt\":\"string_value\",\n  \"term_in_months\":36.0,\n  \"payment\":367.2,\n  \"employment_length\":10.0,\n  \"home_owner\":1.0,\n  \"income\":85000.0,\n  \"verified\":1.0,\n  \"default\":0.0,\n  \"open_accts\":18.0,\n  \"credit_debt\":15926.0,\n  \"interest_rate_by_grade\":11.715399764660955\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://{{apikey}}.execute-api.{{region}}.amazonaws.com/demo/predict",
+					"protocol": "https",
+					"host": [
+						"{{apikey}}",
+						"execute-api",
+						"{{region}}",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"demo",
+						"predict"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "awsv4",
+		"awsv4": [
+			{
+				"key": "service",
+				"value": "{{service}}",
+				"type": "string"
+			},
+			{
+				"key": "region",
+				"value": "{{region}}",
+				"type": "string"
+			},
+			{
+				"key": "secretKey",
+				"value": "{{secretkey}}",
+				"type": "string"
+			},
+			{
+				"key": "accessKey",
+				"value": "{{accesskey}}",
+				"type": "string"
+			}
+		]
+	},
+	"protocolProfileBehavior": {}
+}
