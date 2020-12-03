@@ -4,6 +4,4 @@ In this project, we will builds an on-demand, cloud-based, and highly scalable a
 
 The project demonstrates an end-to-end data product lifecycle starting from data analysis, model training, to deployment. The aim of the project is to show that building a viable data product is attainable while accelerating time to market.
 
-Remember to start small. Keep things simple. And then iterate. 
-
 Follow along in the detailed self-guided project walk-through here: https://www.linkedin.com/pulse/build-data-products-like-tech-giant-samuel-edeh
